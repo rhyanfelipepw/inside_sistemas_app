@@ -35,7 +35,6 @@ class _PostDetailState extends State<PostDetail> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Hero widget for title animation
               Text(
                 widget.post.title,
                 style: TextStyle(
