@@ -6,7 +6,7 @@ Projeto desenvolvido utilizando a ultima versão do flutter.
 
 Aqui está a tela inicial do aplicativo:
 
-![Tela Inicial](assets/images/tela_inicial.png)
+![Tela Inicial] <img src="assets/images/tela_inicial.png" width="400" />
 
 ## Detalhamento do Post
 
