@@ -12,16 +12,16 @@ Aqui está a tela inicial do aplicativo:
 
 Esta é a tela de detalhamento de um post. O título e a descrição.
 
-![Detalhamento](assets/images/detalhamento.png)
+![Detalhamento] <img src="assets/images/detalhamento.png" width="400" />
 
 ## Drawer (Menu Lateral)
 
 O menu lateral (Drawer).
 
-![Drawer](assets/images/drawer.png)
+![Drawer] <img src="assets/images/drawer.png" width="400" />
 
 ## Registro de post
 
 Esta é a tela de registro
 
-![Registro](assets/images/registro.png)
+![Registro] <img src="assets/images/registro.png" width="400" />
