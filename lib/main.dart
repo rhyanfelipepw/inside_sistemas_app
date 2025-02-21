@@ -8,8 +8,8 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        Provider<ApiService>(create: (_) => ApiService()), // ApiService fornecido
-        ChangeNotifierProvider(create: (context) => HomeController(Provider.of<ApiService>(context, listen: false))), // HomeController com ApiService
+        Provider<ApiService>(create: (_) => ApiService()),
+        ChangeNotifierProvider(create: (context) => HomeController(Provider.of<ApiService>(context, listen: false))), 
       ],
       child: const MyApp(),
     ),

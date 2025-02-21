@@ -29,9 +29,8 @@ class DrawerApp extends StatelessWidget {
             onTap: () {
               context.read<HomeController>().createNewPost(context);
             },
-            // Adicionando profundidade com a propriedade elevation
             selectedTileColor:
-                Colors.grey[700], // Cor quando o item é selecionado
+                Colors.grey[700], 
           ),
         ],
       ),

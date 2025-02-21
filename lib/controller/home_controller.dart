@@ -23,10 +23,10 @@ class HomeController extends ChangeNotifier {
         await DataBaseService.savePosts(listPosts);
       }
     } catch (error) {
-      errorMessage = error.toString(); // Captura o erro
+      errorMessage = error.toString();
     } finally {
-      isLoading = false; // Finaliza o carregamento
-      notifyListeners(); // Notifica novamente que o estado mudou (carregado ou erro)
+      isLoading = false; 
+      notifyListeners(); 
     }
   }
 

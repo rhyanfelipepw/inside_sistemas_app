@@ -18,7 +18,7 @@ class _PostDetailState extends State<PostDetail> {
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading:
-              true, // Garante que o ícone de voltar será exibido
+              true,
           iconTheme: IconThemeData(color: Constants.secondColorApp),
           leading: IconButton(onPressed: () { Navigator.pop(context);}, icon: Icon(Icons.arrow_back),),
           title: Text(
@@ -27,7 +27,7 @@ class _PostDetailState extends State<PostDetail> {
           ),
           
           backgroundColor:
-              Constants.mainColorApp, // Ajuste a cor conforme necessário
+              Constants.mainColorApp,
         ),
         backgroundColor: Constants.mainColorApp,
         body: Padding(
@@ -45,8 +45,7 @@ class _PostDetailState extends State<PostDetail> {
                 ),
               ),
       
-              const SizedBox(height: 20), // Espaçamento entre título e descrição
-              // Exibindo a descrição do post
+              const SizedBox(height: 20),
               Text(
                 widget.post.description,
                 style: TextStyle(fontSize: 14, color: Colors.white),

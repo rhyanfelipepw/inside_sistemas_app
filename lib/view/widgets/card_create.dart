@@ -15,21 +15,17 @@ class _PostDialogState extends State<PostDialog> {
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _descriptionController = TextEditingController();
 
-  // Função de validação e envio do formulário
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
-      // Se a validação for bem-sucedida, exibe um SnackBar
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Formulário enviado com sucesso!')),
       );
       Navigator.of(context).pop(Post(id: Random().nextInt(1000000), title: _titleController.text, description: _descriptionController.text)); // Fecha o dialog
     } else {
-      // Caso falhe, exibe um dialog de erro
       _showErrorDialog();
     }
   }
 
-  // Função para mostrar o dialog de erro
   void _showErrorDialog() {
     showDialog(
       context: context,
@@ -75,11 +71,10 @@ class _PostDialogState extends State<PostDialog> {
                 },
               ),
               const SizedBox(height: 16),
-              // Campo para descrição
               TextFormField(
                 controller: _descriptionController,
                 decoration: const InputDecoration(labelText: 'Descrição'),
-                maxLength: 150, // Limita o tamanho da descrição
+                maxLength: 150, 
                 validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'A descrição é obrigatória';
@@ -90,7 +85,6 @@ class _PostDialogState extends State<PostDialog> {
                 },
               ),
               const SizedBox(height: 16),
-              // Botão de envio
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
