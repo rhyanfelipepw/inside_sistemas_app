@@ -20,7 +20,7 @@ O menu lateral (Drawer).
 
 ![Drawer](assets/images/drawer.png)
 
-## Registro de Usuário
+## Registro de post
 
 Esta é a tela de registro
 
